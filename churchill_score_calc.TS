@@ -13,19 +13,4 @@ function score(game: [number, number][]): number {
 
         const [firstRoll, secondRoll] = game[frameIndex];
 
-        if (isStrike([firstRoll, secondRoll])) {
-            totalScore += 10 + (game[frameIndex + 1] ? game[frameIndex + 1][0] + (isStrike(game[frameIndex + 1]) ? (game[frameIndex + 2] ? game[frameIndex + 2][0] : 0) : (game[frameIndex + 1][1] || 0)) : 0);
-            frameIndex++;
-        } else if (isSpare([firstRoll, secondRoll])) {
-            totalScore += 10 + (secondRoll || 0);
-            frameIndex += 2;
-        } else if (firstRoll >= 0 && secondRoll >= 0) {
-            totalScore += firstRoll + secondRoll;
-            frameIndex++;
-        } else {
-            return -1; // Invalid roll
-        }
-    }
-
-    return totalScore;
-}
+       
