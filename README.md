@@ -6,7 +6,7 @@ Code that calculates score of any bowling game. Based on https://www.wikihow.com
 
 ### How to use
 
-We use `yarn` which is a simple is a package manager. To install it visit https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable.
+We use `yarn` which is a simple is a package manager. To install it visit https://classic.yarnpkg.com/lang/en/docs/install
 
 ### Getting started
 
@@ -17,7 +17,7 @@ We use `yarn` which is a simple is a package manager. To install it visit https:
 
 Run `yarn test v<x> [game name]`
 
-Where `<x>` will be replaced by the version number (e.g. `v1`) and `game name` the name of any test game data found in ./src/**tests**/testGame.data.ts
+Where `<x>` will be replaced by the version number (e.g. `v1`) and `game name` the name of any test game data found in `./src/__tests__/testGame.data.ts`, for example `yarn test v1 "simple game"`
 
 ### To add a new implementation
 
