@@ -1,5 +1,4 @@
 import implementations from '../index';
-import { Game } from '../types/bowling.type';
 import { TestData } from './test.types';
 import { data } from './testGame.data';
 
